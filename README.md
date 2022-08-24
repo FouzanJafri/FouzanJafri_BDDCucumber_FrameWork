@@ -1,7 +1,7 @@
 # How to access this project
 1. Clone the project using :-
    ```batch
-   git clone https://github.com/shark-2000/NCA_Fwk.git NCA_Fwk 
+   git clone https://github.com/FouzanJafriFouzanJafri_BDDCucumber_FrameWork 
    ```
 2. Got to the project directory and into the suite folder
 3. Open testng.xml available in suites folder in eclipse IDE.
@@ -13,21 +13,19 @@ flowchart LR;
 src-->main;
 src-->test;
 src-->main-->java-->pages-->Login.java;
-src-->main-->java-->pages-->DashBoard.java;
-src-->main-->java-->utils-->API_Initializer.java;
-src-->main-->java-->utils-->BrowserManager.java;
-src-->main-->java-->utils-->ParsedAPIData.java;
-src-->main-->java-->utils-->ExtentReport.java;
-src-->main-->java-->utils-->ScreenShot.java;
-src-->main-->java-->utils-->Constant.java;
-src-->main-->java-->utils-->ConfigurationReader.java;
-src-->main-->resources-->configurations-->configuration.properties;
-src-->main-->resources-->configurations-->api.properties;
+src-->main-->java-->pages-->HomePage.java;
+src-->main-->java-->BasePage-->Common.java;
+src-->main-->java-->Utility-->BrowserManager.java;
+src-->main-->java-->Utility-->Constraints.java;
+src-->main-->java-->Utility-->ExtentRep.java;
+src-->main-->java-->Utility-->ReadProp.java;
+src-->main-->java-->Utility-->ScreenShot.java;
 src-->test-->Java;
-src-->test-->Java-->abstracted-->Report.java;
-src-->test-->Java-->base-->TestScript.java;
-src-->test-->Java-->dataProviders-->Data.java;
+src-->test-->resources-->configure-->configure.properties;
 src-->test-->Resources-->drivers;
+src-->test-->Resources-->drivers-->chromedriver;
+src-->test-->Resources-->drivers-->msedgedriver;
+
 ```
 
 ## Driver flow
